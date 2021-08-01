@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.contain{
+    max-width: 1140px;
+    padding: 0 0px;
+    margin: 0 auto;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .menu{
+    display: flex;
+    /* justify-content: flex-end; */
+}
+.header .menu em{
+    display: none;
+}
+.m-nono{
+    /* margin-right: 30.1px; */
+
+}
+.material-icon{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 2px;
+}
+/* .header .menu a{ 
+    display: block;
+    padding: 10px;
+}*/
+.header .menu li a {
+    
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 16px;
+    color: rgb(160, 160, 160);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .menu li a:hover{
+    background-color: rgb(160, 160, 160);
+    color: #fff;
+}
+.header .ham{
+    display: none;
+}
+.header .hambtn{
+    display: none;
+}
+.hambtn .cart{
+    position:relative;
+}
+.banner{
+    height: 870px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1140px;
+    width: 100%;
+    max-height: 870px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.banner-text{
+    max-width: 445px;
+}
+.banner h1{
+    line-height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.banner p{
+    line-height: 36px;
+    font-size: 24px;
+}
+.banner .sec{
+    margin-top: 16px;
+    line-height: 60px;
+    text-align: center;
+    width: 350px;
+    font-size: 36px;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+}
+.banner .sec:hover{
+    background: #FFFFFF4D;
+    cursor: pointer;
+}
+/* .topProduct-content{ 
+    display: flex;
+}*/
+.product{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.topProduct-content h2{
+    font: normal normal bold 32px/48px SF Pro Text;
+}
+.topProduct-content p{
+   font: normal normal 300 20px/30px PingFang TC; 
+}
+.topProduct-content a{
+    color: #AC8A46;
+    font-size: 16px;
+    text-decoration: none;
+    font: normal normal 600 16px/24px PingFang TC;
+}
+.topProduct-content a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.topProduct-img{
+    display: block;
+    
+}
+.topProduct-img img{
+    width: 100%;
+}
+
+.text{
+    
+    max-width: 350px;
+}
+.img-fluid5{
+    max-width: 555px;
+    /* height: 1080px; */
+}
+.topProduct-content-end{
+    margin-top: 12px;
+}
+.topProduct-content-end h3{
+    font: normal normal bold 24px/36px SF Pro Text;
+    /* margin-bottom: 4px; */
+}
+.topProduct-content-end .detail{
+    width: 350px;
+    padding-right: 60px;
+    font: normal normal 300 16px/24px SF Pro Text;
+    padding-bottom: 52px;
+}
+.text .detailbutton{
+    line-height: 60px;
+    margin-top: 8px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    /* font: normal normal medium 20px/30px SF Pro Text; */
+    font-size: 20px;
+    /* padding-top: 18px; */
+    align-items: center;
+}
+.text .detailbutton:hover{
+    background: #FFFFFF4D;
+    cursor: pointer;
+}
+
+.salelist{
+    background-color: #E0E0E0;
+    height: 100%;
+    padding-bottom: 40px;
+    /*align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; */
+}
+/* .fragrance-mid{
+    margin-left: 29px;
+    margin-right: 30px;
+} */
+.salelist-img{
+    margin-top: 40px;
+}
+.salelist h4{
+    font: normal normal 600 24px/36px SF Pro Text;
+}
+.salelist .type{
+    font: normal normal 300 16px/24px SF Pro Text;
+    margin-bottom: 16px;
+}
+.salelist .price{
+    font: normal normal 300 16px/24px SF Pro Text;
+}
+.salelist .price span{
+    font: normal normal 300 16px/24px SF Pro Text;
+    text-decoration: line-through;
+    color: #8D8D8D;
+}
+.fragrance-soldout{
+    width: 350px;
+    height: 540px;
+    background: transparent url('image/index8.jpg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-position: center;
+    background: transparent #000;
+    opacity: 0.3;
+    background-position: center;
+    background: darken(#000, 90%);
+    display: flex;
+    justify-content: center;
+}
+.fragrance-soldout .sold{
+    color: #fff;
+    font: normal normal 600 24px/36px SF Pro Text;
+} 
+.will{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.will-img{
+    background-image: url("image/index9.jpg");
+    width: 730px;
+    height: 520px;
+    /* height: 520px; */
+}
+.will-text{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.will-text h5{
+    align-items: start;
+    font: normal normal bold 32px/48px SF Pro Text;
+    font-weight: bold;
+}
+.will-text p{
+    font: normal normal 300 20px/30px SF Pro Text;
+    margin-bottom: 16px;
+}
+.will-text a{
+    color: #AC8A46;
+    font-size: 16px;
+    text-decoration: none;
+    font: normal normal 600 16px/24px PingFang TC;
+    cursor: pointer;
+}
+.will-text a:hover{
+    text-decoration: underline;
+}
+.endbanner{
+    background: url("image/index10.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    background-size: 130%; 
+}
+.endbanner h6{
+    font: normal normal 600 32px/48px PingFang TC;
+    font-size: 32px;
+    color: #8D8D8D;
+}
+.endbanner-title{
+    padding-top: 312px;
+}
+.subscribe{
+    margin-top: 20px;
+    width: 350px;
+    height: 60px;
+    border:2px solid #916000; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subscribe .emailinput{
+    /* display: block; */
+    background: #fff;
+    padding-left: 16px;
+    max-width: 219px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+}
+.subscribe .btn{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: #916000;
+    color: #fff;
+    max-width: 131px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+}
+.btn:hover{
+    background: darken(#f00, 50%);
+    cursor: pointer;
+}
+.endbanner-bar{
+    
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    background: #916000;
+    height: 80px;
+}
+.endbanner-st{
+    max-width: 1140px;
+    display: flex;
+    width: 343px;
+    justify-content: space-between;
+    align-items: center;
+}
+.endbanner-st img{
+    height: 38px;
+}
+.endbanner-st p{
+    color: #fff;
+    font: normal normal medium 14px/21px SF Pro Text;
+}
+.endbanner-en{
+    max-width: 1140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.endbanner-en a{
+    padding: 20px;
+    text-decoration: none;
+    /* margin-left: 36px; */
+    color: #fff;
+    font: normal normal normal 20px/30px SF Pro Text;
+}
+.endbanner-en a:hover{
+    background-color: #fff;
+    color: #916000;
+}
+@media(max-width: 768px){
+    
+    .contain{ 
+        max-width: 768px;
+        width: 100%;
+        padding: 0px 15px;
+        margin: 0 auto;
+    }
+    .banner{
+        background-position: 10% 10%;
+        background-size: 230%;
+        height: 480px;
+    }
+    .banner-text h1{
+        font-size: 32px;
+    }
+    .banner-text p{
+        font-size: 20px;
+    }
+    .banner-text .sec{
+        width: 300px;
+    }
+    
+    .header .menu .art{
+        width: 72px;
+    }
+    .header .menu span{
+        display: none;
+    }
+    .header .ham li{
+        color: #fff;
+        background-color: #707070;
+        border-bottom:2px solid #fff ;
+    }
+    .header .hambtn em{
+        display: block;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        background: #916000;
+        color: #fff;
+        border-radius: 100%;
+    }
+    .m-nono{
+        display: none;
+    }
+    .header .menu{
+        display: flex;
+        justify-content: end;
+    }
+    .header .hambtn{
+        display: block;
+    }
+    .header .cart{
+        color: #8d8d8d;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    .header .act{
+        color: #8d8d8d;
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0px 10px;
+    }
+    .topProduct-content{
+        justify-content: center;
+        align-items: center;
+    }
+    .topProduct-content-end{
+        margin-bottom: 40px;
+    }
+    .salelist{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .salelist-img{
+        height: 350px;
+        width: 100%;
+    }
+    .fragrance-soldout{
+        width: 100%;
+        height: 350px;
+        background: transparent url('image/index8.jpg') 0% 0% no-repeat padding-box;
+        background-size: 120%;
+        opacity: 1;
+        background-position: center;
+        background: transparent #000;
+        opacity: 0.3;
+        background-position: center;
+        background: darken(#000, 90%);
+        display: flex;
+        justify-content: center;
+    }
+    .sold{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .will{
+        margin-bottom: 40px;
+    }
+    .will-img{
+        background: url("image/index11.jpg");
+        /* height: 520px; */
+    }
+    .endbanner{
+        background: url("image/index10.jpg");
+        background-repeat: no-repeat;
+        background-position: -70px 0px;
+        height: 600px;
+        background-size: 200%; 
+    }
+    .endbanner-en{
+        display: none;
+    }
+    .endbanner-st{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe{
+        max-width: 320px;
+    }
+    .emailinput{
+        max-width: 200px;
+        width: 100%;
+    }
+    .btn{
+        max-width: 120px;
+        width: 100%;
+    }
+}
+
