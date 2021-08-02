@@ -1,4 +1,15 @@
-$(document).ready(function(){
+$(FrontPage).ready(function(){
+    $(".act").click(function(event){
+        event.preventDefault();
+        $(this).parent().parent().find(".ham").toggleClass("active");
+    });
+});
+$(ProductDetail).ready(function(){
+    $(".act").click(function(event){
+        $(this).parent().parent().find(".ham").toggleClass("active");
+    });
+});
+$(ProductList).ready(function(){
     $(".act").click(function(event){
         $(this).parent().parent().find(".ham").toggleClass("active");
     });

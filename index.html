@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Front page</title>
+    <title>FrontPage</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +12,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js">
 </head>
 <body>
     <!--分頁切換-->
-    <ul>
-        {% for post in paginator.posts %}
-        <li><a href="index.html">{{ 首頁 }}</a></li>
-        {% endfor %}
-    </ul>
-    
-    <nav class="pagination" role="navigation">
-        {% if paginator.previous_page %}
-        <a class="previous pagination__newer btn btn-small btn-tertiary" href="ProductDetail.html">&larr; 上一頁</a>
-        {% endif %}
-        <span class="page_num pagination__page-number">{{ paginator.page }} / {{ paginator.total_pages }}</span>
-        {% if paginator.next_page %}
-        <a class="next pagination__older btn btn-small btn-tertiary" href="ProductList.html">下一頁 &rarr;</a>
-        {% endif %}
-    </nav>
+    <div class="contain">
+        <ul>
+            <!-- {% for post in paginator.posts %} -->
+            <li><a href="index.html"> 首頁 </a></li>
+            <!-- {% endfor %} -->
+        </ul>
+        
+        <nav class="pagination" role="navigation">
+            <!-- {% if paginator.previous_page %} -->
+            <a class="previous pagination__newer btn btn-small btn-tertiary" href="ProductDetail.html">&larr; 上一頁</a>
+            <!-- {% endif %} -->
+            <span class="page_num pagination__page-number">1 / 3</span>
+            <!-- {% if paginator.next_page %} -->
+            <a class="next pagination__older btn btn-small btn-tertiary" href="ProductList.html">下一頁 &rarr;</a>
+            <!-- {% endif %} -->
+        </nav>
+    </div>
     <!--首頁表頭-->
     <div class="header contain">
         <h1 class="logo d-flex align-items-md-center"> <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png" alt="">
@@ -41,16 +44,17 @@
             <li><a href="#"><span class="material-icons">shopping_cart</span><span>Cart(3)</span><em>3</em></a></li>
             
         </ul>
+        <div class="hambtn">
+            <a href="#" class="cart"><span class="material-icons">shopping_cart</span><em>3</em></a>
+            <a href="#" class="act"><span class="material-icons">menu</span></a>    
+        </div>
         <ul class="ham active">
             <li><a href="#">Product</a></li>
             <li><a href="#">Log in</a></li>
             <li><a href="#">Wishlist</a></li>
             <li><a href="#">cart</a></li>
         </ul>
-        <div class="hambtn">
-            <a href="#" class="cart"><span class="material-icons">shopping_cart</span><em>3</em></a>
-            <a href="#" class="act"><span class="material-icons">menu</span></a>    
-        </div>
+        
         
     </div>
     <div class="banner">

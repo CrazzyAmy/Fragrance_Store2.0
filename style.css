@@ -450,8 +450,36 @@ img{
         justify-content: end;
     }
     .header .hambtn{
-        display: block;
+        display: block; 
     }
+    .header{
+        position: relative;
+    }
+    .ham {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        max-height: 0px;
+        transition: all 0.8s;
+        overflow: hidden;
+        z-index: 120;
+      }
+      .ham.active {
+        max-height: 200px;
+      }
+      
+      .ham li a {
+        display: block;
+        background: #916000;
+        color: #FFFFFF;
+        border-top: 1px solid #FFFFFF;
+        padding: 16px 0;
+        text-decoration: none;
+      }
+      .ham li a:hover {
+        background: hsl(40, 86%, 19%);
+      }
     .header .cart{
         color: #8d8d8d;
         display: inline-block;
