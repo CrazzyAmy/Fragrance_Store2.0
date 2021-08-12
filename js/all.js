@@ -1,16 +1,16 @@
 $(FrontPage).ready(function(){
-    $(".act").click(function(event){
+    $('.act').click(function(event){
         event.preventDefault();
-        $(this).parent().parent().find(".ham").toggleClass("active");
+        $('.ham').toggleClass('active');
     });
 });
 $(ProductDetail).ready(function(){
-    $(".act").click(function(event){
-        $(this).parent().parent().find(".ham").toggleClass("active");
+    $('.act').click(function(event){
+        $(this).parent().parent().find('.ham').toggleClass('active');
     });
 });
 $(ProductList).ready(function(){
-    $(".act").click(function(event){
-        $(this).parent().parent().find(".ham").toggleClass("active");
+    $('.act').click(function(event){
+        $(this).parent().parent().find('.ham').toggleClass('active');
     });
 });
