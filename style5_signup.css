@@ -148,63 +148,29 @@ img{
     background-color: #fff;
     color: #916000;
 }
-
-.main{
-    margin-bottom: 82px;
-}
-.pic{
-    /* background-image: url('image/login1.jpg');*/
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; 
-    height: 730px;
-}
-.right{
-    max-width: 350px;
-    padding-top: 211px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-h1{
-    text-align: left;
-    font: normal normal bold 32px/48px SF Pro Text;
+.leftlist h2{
+    color: #848484;
+    font: normal normal medium 20px/30px SF Pro Text;
     font-weight: bold;
+    margin-bottom: 28px;
 }
-label{
-    font: normal normal normal 16px/22px PingFang TC;
-    font-weight: bold;
-}
-.buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-a{
-    color: #916000;
+.leftlist a{
     font: normal normal medium 16px/24px PingFang TC;
-    text-decoration: none;
+    color: #848484;
 }
-.lin{
-    align-items: center;
+
+.account{
+    display: none;
 }
-.lin a:hover{
+.person h2{
+    font: normal normal medium 16px/22px PingFang TC;
     font-weight: bold;
-    color: #916000;
+    border-bottom: 1px solid #818A91;
+    padding-bottom: 8px;
 }
-button{
-    width: 65px;
-    height: 38px;
-    align-items: center;
-    border-radius: 4px;
-    background-color: #916000;
-    color: #fff;
-}
-button:hover{
-    border: 1px solid #916000;
-    background-color: #fff;
-    color: #916000;
-}
+
+
+
 
 
 .endbanner-bar{
@@ -337,19 +303,32 @@ button:hover{
     .bar-start{
         display: none;
     }
-    .main{
-        margin-top: 28px;
-        margin-bottom: 106px;
+    .leftlist h2{
+        display: none;
     }
-    .pic{
-        padding-top: 40px;
-        height: 100%;
+    .leftlist .list-unstyled{
+        display: flex;
+        justify-content: space-between;
+        margin: 45px 0 40px 0;
+        font: normal normal medium 16px/24px PingFang TC;
+        font-weight: bold;
     }
-    .right{
-        padding-top: 28px;
+    .account .list-unstyled{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* margin: 45px 0 40px 0; */
+        margin-bottom: 40px;
+        font: normal normal medium 16px/24px PingFang TC;
+        font-weight: bold;
     }
-
-
+    .account{
+        display: flex;
+        flex-direction: column;
+    }
+    .accountmd{
+        display: none;
+    }
 
 
 
