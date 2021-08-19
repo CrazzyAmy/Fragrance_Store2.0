@@ -200,9 +200,16 @@ button{
     background-color: #916000;
     color: #fff;
 }
+
 button:hover{
     border: 1px solid #916000;
     background-color: #fff;
+    color: #916000;
+}
+button a{
+    color: #fff;
+}
+button a:hover{
     color: #916000;
 }
 
