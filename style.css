@@ -28,9 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -64,6 +62,7 @@ img{
 }
 body{
     font: normal normal 300 SF Pro Text;
+    font-family: var(--bs-font-sans-serif);
     line-height: 1.5;
     font-size: 20px;
 }
@@ -89,10 +88,7 @@ body{
 .header .menu em{
     display: none;
 }
-.m-nono{
-    /* margin-right: 30.1px; */
 
-}
 .material-icon{
     display: inline-block;
     margin: 2px;
@@ -102,17 +98,18 @@ body{
     padding: 10px;
 }*/
 .header .menu li a {
-    
+    /* font-family:  "SF Pro"; */
     display: inline-block;
     padding: 16px;
     color: rgb(160, 160, 160);
     text-align: center;
     font-weight: bold;
     text-decoration: none;
+    align-items: center;
 }
 .header .menu li a:hover{
-    background-color: rgb(160, 160, 160);
-    color: #fff;
+    /* background-color: rgb(160, 160, 160); */
+    color: #AC8A46;
 }
 .header .ham{
   display: none;
@@ -244,9 +241,6 @@ body{
     padding: 13.2px 0;
     text-align: center;
     width: 350px;
-    /* font: normal normal medium 20px/30px SF Pro Text; */
-    /* padding-top: 18px; */
-    align-items: center;
 }
  .detailbutton:hover{
     background: #FFFFFF4D;
@@ -255,7 +249,6 @@ body{
 .detailbutton a{
     text-decoration: none;
     color: #000;
-    
     font-weight: bold;
 }
 
@@ -263,20 +256,31 @@ body{
     background-color: #E0E0E0;
     padding-bottom: 40px;
 } */
-.slst{
+/* .slst{
     display: flex;
     flex-direction: row;
 
-}
-.salelist li{
-    display: inline;
-}
-/* .fragrance-mid{
-    margin-left: 29px;
-    margin-right: 30px;
 } */
+/* .salelist li{
+    display: inline;
+} */
+
 .salelist-img{
     margin-top: 40px;
+    max-width: 350px;
+    height: 540px;
+}
+.img-1{
+    background: url('image/index6.jpg') center no-repeat;
+    background-size: cover;
+}
+.img-2{
+    background: url('image/index7.jpg') center no-repeat;
+    background-size: cover;
+}
+.img-3{
+    background: url('image/index8.jpg') center no-repeat;
+    background-size: cover;
 }
 .salelist h4{
     font-weight: 600;
@@ -294,25 +298,20 @@ body{
     text-decoration: line-through;
     color: #8D8D8D;
 }
-.fragrance-soldout{
+.salelist .fragrance-soldout{
     width: 350px;
     height: 540px;
-    background: transparent url('image/index8.jpg') 0% 0% no-repeat padding-box;
-    opacity: 1;
-    background-position: center;
-    background: transparent #000;
-    opacity: 0.3;
-    /* background-position: center;
-    background: darken(#000, 90%);*/
-    display: flex; 
-    justify-content: center;
-}
-
-.fragrance-soldout .sold{
+    /* opacity: 1;
+    background-position: center; */
+    background-color:  rgba(0, 0, 0, 0.3);
+    /* line-height: 540px; */
+    top: 40px;
+    left: 0px;
     color: #fff;
     font-weight: 600;
     font-size: 24px;
-} 
+}
+
 .will{
     margin-top: 60px;
     margin-bottom: 60px;
@@ -320,7 +319,8 @@ body{
     justify-content: space-around;
 }
 .will-img{
-    background-image: url("image/index9.jpg");
+    background: url("image/index9.jpg") center no-repeat;
+    background-size: cover;
     /* width: 730px; */
     height: 520px;
 }
@@ -331,7 +331,6 @@ body{
     justify-content: center;
 }
 .will-text h5{
-    /* align-items: start; */
     font-size: 32px;
     font-weight: bold;
 }
@@ -350,9 +349,7 @@ body{
     text-decoration: underline;
 }
 .endbanner{
-    background: url("image/index10.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url("image/index10.jpg") center no-repeat;
     height: 600px;
     background-size: 130%; 
 }
@@ -402,7 +399,6 @@ body{
     
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     background: #916000;
     height: 80px;
 }
@@ -535,9 +531,6 @@ body{
     .salelist{
         display: flex;
         align-items: flex-end;
-    }
-    .fragrance{
-        display: inline;
     }
     .slst{
         display: flex;

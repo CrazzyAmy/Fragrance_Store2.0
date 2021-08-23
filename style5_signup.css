@@ -29,7 +29,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	font: normal normal 300 SF Pro Text;
+    font-family: var(--bs-font-sans-serif);
+	line-height: 1.5;
+    font-size: 20px;
 }
 ol, ul {
 	list-style: none;
@@ -75,20 +78,12 @@ img{
 .header .menu em{
     display: none;
 }
-.m-nono{
-    /* margin-right: 30.1px; */
-
-}
 .material-icon{
     display: inline-block;
     font-size: 20px;
     line-height: 1.5;
     margin: 2px;
 }
-/* .header .menu a{ 
-    display: block;
-    padding: 10px;
-}*/
 .header .menu li a {
     
     display: inline-block;
@@ -101,8 +96,7 @@ img{
     text-decoration: none;
 }
 .header .menu li a:hover{
-    background-color: rgb(160, 160, 160);
-    color: #fff;
+    color: #AC8A46;
 }
 .header .ham{
   display: none;
@@ -137,7 +131,8 @@ img{
     justify-content: start;
 }
 .menu-start li a{
-    font: normal normal normal 20px/30px SF Pro Text;
+    /* font: normal normal normal 20px/30px SF Pro Text; */
+    height: 52px;
     color: #fff;
     display: inline-block;
     padding: 16px;
@@ -145,8 +140,7 @@ img{
     text-decoration: none;
 }
 .menu-start a:hover{
-    background-color: #fff;
-    color: #916000;
+    background-color: #754f02;
 }
 .leftlist h2{
     color: #848484;

@@ -29,7 +29,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	font: normal normal 300 SF Pro Text;
+    font-family: var(--bs-font-sans-serif);
+	line-height: 1.5;
+    font-size: 20px;
 }
 ol, ul {
 	list-style: none;
@@ -75,20 +78,12 @@ img{
 .header .menu em{
     display: none;
 }
-.m-nono{
-    /* margin-right: 30.1px; */
-
-}
 .material-icon{
     display: inline-block;
     font-size: 20px;
     line-height: 1.5;
     margin: 2px;
 }
-/* .header .menu a{ 
-    display: block;
-    padding: 10px;
-}*/
 .header .menu li a {
     
     display: inline-block;
@@ -101,8 +96,7 @@ img{
     text-decoration: none;
 }
 .header .menu li a:hover{
-    background-color: rgb(160, 160, 160);
-    color: #fff;
+    color: #AC8A46;
 }
 .header .ham{
   display: none;
@@ -137,7 +131,8 @@ img{
     justify-content: start;
 }
 .menu-start li a{
-    font: normal normal normal 20px/30px SF Pro Text;
+    /* font: normal normal normal 20px/30px SF Pro Text; */
+    height: 52px;
     color: #fff;
     display: inline-block;
     padding: 16px;
@@ -145,8 +140,7 @@ img{
     text-decoration: none;
 }
 .menu-start a:hover{
-    background-color: #fff;
-    color: #916000;
+    background-color: #754f02;
 }
 
 .main{
@@ -168,8 +162,8 @@ img{
 }
 h1{
     text-align: left;
-    font: normal normal bold 32px/48px SF Pro Text;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 600;
 }
 label{
     font: normal normal normal 16px/22px PingFang TC;
@@ -192,25 +186,32 @@ a{
     font-weight: bold;
     color: #916000;
 }
-button{
+.buttons .btn-1{
+    width: 65px;
+    height: 38px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #916000;
+    background-color: #fff;
+    color: #916000;
+}
+.buttons .btn-2{
+    color: #000;
     width: 65px;
     height: 38px;
     align-items: center;
     border-radius: 4px;
     background-color: #916000;
-    color: #fff;
+    
 }
 
-button:hover{
-    border: 1px solid #916000;
-    background-color: #fff;
-    color: #916000;
-}
-button a{
+.buttons .btn-1:hover{
     color: #fff;
+    background-color: #916000;
+    
 }
-button a:hover{
-    color: #916000;
+.buttons .btn-2:hover{
+    background-color: #754f02;
 }
 
 
